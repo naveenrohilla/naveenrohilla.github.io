@@ -111,7 +111,7 @@
     .stat .num { font-family: var(--head); font-size: 3rem; font-weight: 700; }
     .stat .label { color: var(--muted); font-size: .92rem; }
 
-    .banner { margin-top: 2.5rem; overflow: hidden; border: 1px solid var(--glass-border); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .banner { width: min(640px, 100%); margin: 2.5rem auto 0; overflow: hidden; border: 1px solid var(--glass-border); border-radius: var(--radius); box-shadow: var(--shadow); }
     .banner img { width: 100%; height: auto; }
 
     .skill-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2.5rem; }
@@ -307,6 +307,7 @@
       <div class="container">
         <p class="eyebrow reveal">Featured Projects</p>
         <h2 class="section-title reveal">Selected <span class="grad">work</span></h2>
+        <div class="banner reveal"><img src="assets/images/section-draw.svg" alt="Illustration of lucky draw and prize distribution system" loading="lazy" /></div>
         <div class="project-grid" id="projectGrid"></div>
       </div>
     </section>
@@ -378,6 +379,7 @@
       <div class="container">
         <p class="eyebrow reveal">Contact</p>
         <h2 class="section-title reveal">Let's <span class="grad">connect</span></h2>
+        <div class="banner reveal"><img src="assets/images/section-automation.svg" alt="Illustration of business automation workflow" loading="lazy" /></div>
         <div class="glass contact-box tilt reveal">
           <div class="icon-btn" style="width:72px;height:72px;font-size:2rem;background:#25D366;border:0;">💬</div>
           <h3>Connect with me on WhatsApp</h3>
