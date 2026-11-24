@@ -168,6 +168,10 @@
     .contact-row { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: .5rem; }
     .wa-note { font-size: .85rem; color: var(--muted); }
 
+
+    /* Balanced layout refinements */
+    .contact-box { width: min(720px, 100%); margin: 2.5rem auto 0; padding: 3.2rem 2.2rem; }
+    .banner { width: min(640px, 100%); }
     footer { padding: 2.5rem 0; border-top: 1px solid var(--glass-border); color: var(--muted); font-size: .9rem; }
     .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; align-items: center; }
     .footer-links { display: flex; gap: 1rem; }
@@ -261,7 +265,7 @@
           <p class="muted">I specialize in managing end-to-end IT operations, building secure infrastructure, maintaining business-critical applications, implementing cybersecurity controls, and developing customized technology solutions that improve operational efficiency.</p>
           <p class="muted">My approach combines strategic IT management with practical technical expertise, ensuring reliable, secure and scalable business operations.</p>
         </div>
-        <ul class="glass highlights reveal">
+        <ul class="glass highlights tilt reveal">
           <li>16+ years of experience</li>
           <li>Pharmaceutical IT experience</li>
           <li>Enterprise infrastructure management</li>
@@ -287,7 +291,7 @@
       <div class="container">
         <p class="eyebrow reveal">Technical Expertise</p>
         <h2 class="section-title reveal">Core <span class="grad">capabilities</span></h2>
-        <div class="banner reveal"><img src="assets/images/section-security.svg" alt="Illustration of cybersecurity protection with firewall and access control" loading="lazy" /></div>
+        <div class="banner tilt reveal"><img src="assets/images/section-security.svg" alt="Illustration of cybersecurity protection with firewall and access control" loading="lazy" /></div>
         <div class="skill-grid" id="skillGrid"></div>
       </div>
     </section>
@@ -297,7 +301,7 @@
       <div class="container">
         <p class="eyebrow reveal">Professional Experience</p>
         <h2 class="section-title reveal">Career <span class="grad">timeline</span></h2>
-        <div class="banner reveal"><img src="assets/images/section-infrastructure.svg" alt="Illustration of enterprise servers, network and backup infrastructure" loading="lazy" /></div>
+        <div class="banner tilt reveal"><img src="assets/images/section-infrastructure.svg" alt="Illustration of enterprise servers, network and backup infrastructure" loading="lazy" /></div>
         <div class="timeline" id="timeline"></div>
       </div>
     </section>
@@ -307,7 +311,7 @@
       <div class="container">
         <p class="eyebrow reveal">Featured Projects</p>
         <h2 class="section-title reveal">Selected <span class="grad">work</span></h2>
-        <div class="banner reveal"><img src="assets/images/section-draw.svg" alt="Illustration of lucky draw and prize distribution system" loading="lazy" /></div>
+        <div class="banner tilt reveal"><img src="assets/images/section-draw.svg" alt="Illustration of lucky draw and prize distribution system" loading="lazy" /></div>
         <div class="project-grid" id="projectGrid"></div>
       </div>
     </section>
@@ -317,7 +321,7 @@
       <div class="container">
         <p class="eyebrow reveal">Education &amp; Training</p>
         <h2 class="section-title reveal">Academic <span class="grad">foundation</span></h2>
-        <div class="banner reveal"><img src="assets/images/section-pharma.svg" alt="Illustration of pharmaceutical IT with validated records and GxP compliance" loading="lazy" /></div>
+        <div class="banner tilt reveal"><img src="assets/images/section-pharma.svg" alt="Illustration of pharmaceutical IT with validated records and GxP compliance" loading="lazy" /></div>
         <div class="edu-grid">
           <div class="glass edu-card tilt reveal">
             <p class="eyebrow">Formal Education</p>
@@ -344,7 +348,7 @@
       <div class="container">
         <p class="eyebrow reveal">Career Opportunities</p>
         <h2 class="section-title reveal">For <span class="grad">recruiters</span></h2>
-        <div class="banner reveal"><img src="assets/images/section-cloud.svg" alt="Illustration of cloud infrastructure and virtualization" loading="lazy" /></div>
+        <div class="banner tilt reveal"><img src="assets/images/section-cloud.svg" alt="Illustration of cloud infrastructure and virtualization" loading="lazy" /></div>
         <div class="career-grid">
           <div class="glass career-card tilt reveal">
             <h3>Target Roles</h3>
@@ -379,7 +383,7 @@
       <div class="container">
         <p class="eyebrow reveal">Contact</p>
         <h2 class="section-title reveal">Let's <span class="grad">connect</span></h2>
-        <div class="banner reveal"><img src="assets/images/section-automation.svg" alt="Illustration of business automation workflow" loading="lazy" /></div>
+        <div class="banner tilt reveal"><img src="assets/images/section-automation.svg" alt="Illustration of business automation workflow" loading="lazy" /></div>
         <div class="glass contact-box tilt reveal">
           <div class="icon-btn" style="width:72px;height:72px;font-size:2rem;background:#25D366;border:0;">💬</div>
           <h3>Connect with me on WhatsApp</h3>
@@ -551,7 +555,7 @@
       </div>`).join('');
 
     document.getElementById('timeline').innerHTML = EXPERIENCE.map((e, i) => `
-      <div class="glass t-item open reveal" style="transition-delay:${i * 80}ms">
+      <div class="glass t-item open tilt reveal" style="transition-delay:${i * 80}ms">
         <div class="t-head" role="button" tabindex="0" aria-expanded="true">
           <div>
             <h3>${esc(e.company)}</h3>
